@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* profile picture */
+.profile-picture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    height: auto;
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+/* Profile Name */
+.profile-name{
+    text-align: center;
+    padding: 30px;
+    font-size: 28px;
+}
+
+/* Links */
+.links{
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid red;
+    border-width: 2px;
+    padding: 20px;
+    width: 290px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 40px;
+
+    font-size: 1.5rem;
+}
+/* adding my background images into the profile name text
+ and also adding an 
+animation to it so it can flow infinitely :) */
+#first-page-text{
+    
+    background: url(pexels-daniel-torobekov-11258459.jpg);
+    background-size: auto 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anim 8s linear infinite;
+}
+
+/* calling my anim */
+@keyframes anim {
+    from {
+        background-position: center 200;
+    }
+    to {
+        background-position: center 0;
+    }
+}
+
+/* adding my background images into the profile links text
+ and also adding an 
+animation to it so it can flow infinitely :) */ 
+.links-pic{
+    background: url(ocean.avif);
+    background-size: auto 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anim 8s linear infinite;
+}
+
+@keyframes anim {
+    from {
+        background-position: center 200;
+    }
+    to {
+        background-position: center 0;
+    }
+}
+/* Adding no decoration to my text */
+a{
+    text-decoration: none;
+}
